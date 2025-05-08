@@ -1,0 +1,68 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "ssh_connections": [
+    {
+      "host": "freesia",
+      "projects": [
+        {
+          "paths": ["/workspaces/freesia-rebar-inspection"]
+        }
+      ],
+      "port_forwards": [
+        {
+          "local_host": "0.0.0.0",
+          "local_port": 8001,
+          "remote_port": 8001
+        },
+        {
+          "local_host": "0.0.0.0",
+          "local_port": 3001,
+          "remote_port": 3001
+        },
+        {
+          "local_host": "0.0.0.0",
+          "local_port": 5555,
+          "remote_port": 5555
+        }
+      ]
+    },
+    {
+      "host": "csc",
+      "projects": [
+        {
+          "paths": ["~/Documents/GitHub"]
+        }
+      ]
+    }
+  ],
+  "project_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Vesper"
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  }
+}

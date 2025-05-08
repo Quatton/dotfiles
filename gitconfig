@@ -1,0 +1,19 @@
+[user]
+	name = Quatton
+	email = atomicatives@gmail.com
+	signingkey = F191B9EE45E0D47536F83EFC7905990985B5AF0E
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	c = commit -m
+	all = add .
+	ch = checkout
+[commit]
+	gpgsign = false
+[gpg]
+	program = gpg
+[core]
+	editor = code --wait
+[push]
+	autoSetupRemote = true
+[http]
+	postBuffer = 157286400
